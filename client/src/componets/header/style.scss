@@ -1,96 +1,96 @@
-header{
+header {
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(15px);
-   .main-header{
+    .main-header {
+        border-bottom: 1px solid rgba(173, 173, 173, 0.17);
         padding: 17px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 53px;
-        .header-logo{
+        gap: 100px;
+        .header-logo {
             cursor: pointer;
             display: flex;
             gap: 8px;
-            img{
+            img {
                 max-width: 39px;
                 max-height: 39px;
             }
-            .logo-txt{
-                
-                h2{
+            .logo-txt {
+                h2 {
                     font-size: 21px;
                     font-weight: 700;
-                    color: #3BB77E;
+                    color: #3bb77e;
                 }
-                h3{
-                    color: #ADADAD;
+                h3 {
+                    color: #adadad;
                     font-size: 14px;
                     font-weight: 500;
                 }
             }
         }
-        .search-wrapper{
+        .search-wrapper {
             display: flex;
             border-radius: 5px 0px 0px 5px;
-            background: #F3F3F3;
-            .search-container{
+            background: #f3f3f3;
+            .search-container {
                 display: flex;
                 align-items: center;
                 gap: 12px;
                 padding: 12px;
-                select{
+                select {
                     background: transparent;
-                    color:  #253D4E;
+                    color: #253d4e;
                     font-size: 14px;
                     font-weight: 600;
                     cursor: pointer;
                 }
-                .line{
+                .line {
                     width: 1px;
                     height: 13px;
-                    background: #ADADAD;
+                    background: #adadad;
                 }
-                input{
+                input {
                     background: transparent;
-                    color:  #000;
+                    color: #000;
                     font-size: 14px;
                     font-weight: 500;
-                    &::placeholder{
-                        color: #ADADAD;
+                    &::placeholder {
+                        color: #adadad;
                     }
                 }
-            }   
-            button{
+            }
+            button {
                 padding: 11px 17px;
                 border-radius: 0px 5px 5px 0px;
-                background:  #3BB77E;
-                img{
+                background: #3bb77e;
+                img {
                     width: 24px;
                     height: 24px;
                 }
-            }         
+            }
         }
-        .my-counters{
-            display: flex   ;
+        .my-counters {
+            display: flex;
             gap: 53px;
             align-items: center;
-            .counter-box{
+            .counter-box {
                 cursor: pointer;
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                img{
+                img {
                     width: 28px;
                     height: 30px;
                 }
-                .txt-wrapper{
-                    h3{
+                .txt-wrapper {
+                    h3 {
                         color: #000;
                         font-size: 12px;
                         font-weight: 500;
                     }
-                    p{
-                        color: #3BB77E;
+                    p {
+                        color: #3bb77e;
                         font-size: 12px;
                         font-weight: 500;
                         line-height: normal;
@@ -98,29 +98,95 @@ header{
                 }
             }
         }
-        .toggle-menu{
+        .toggle-menu {
             cursor: pointer;
             display: flex;
             align-items: center;
             gap: 5px;
-            #profPicture{
+            #profPicture {
                 width: 40px;
                 height: 40px;
                 object-fit: cover;
             }
-            h3{
-                color:  #253D4E;
+            h3 {
+                color: #253d4e;
                 font-size: 16px;
                 font-weight: 600;
             }
-            #toggleArrow{
+            #toggleArrow {
                 width: 16px;
+            }
+        }
+    }
+    .links-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px;
+        gap: 90px;
+
+        .BrowsAllCategories {
+            padding: 14px;
+            border-radius: 2px;
+            background: #3bb77e;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            img {
+                width: 24px;
+                height: 24px;
             }
 
         }
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            li {
+                padding: 10px;
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                gap: 5px;
+                color: #253d4e;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                img {
+                    height: 20px;
+                    width: 20px;
+                    object-fit: cover;
+                }
+                &:hover {
+                    color: #3bb77e;
+                    img {
+                        fill: green;
+                    }
+                }
+            }
+        }
 
-   }
-   .links-header{
-
-   } 
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+            }
+            span {
+                color: #3bb77e;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p {
+                color: #253d4e;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
 }

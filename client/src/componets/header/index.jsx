@@ -5,6 +5,14 @@ import myshort from '../../assets/img/icon/myshort.svg'
 import mycard from '../../assets/img/icon/mycard.svg'
 import profpic from '../../assets/img/picture/prof-pic.svg'
 import downicon from '../../assets/img/icon/down-icon.svg'
+import home from '../../assets/img/icon/homeicon.svg'
+import hot from '../../assets/img/icon/hot.svg'
+import percent from '../../assets/img/icon/percent.svg'
+import megaphone from '../../assets/img/icon/megaphone.svg'
+import call from '../../assets/img/icon/call.svg'
+import browse from '../../assets/img/icon/browse.svg'
+
+
 
 
 const Header = () => {
@@ -66,14 +74,41 @@ const Header = () => {
                         <img id='togglearow' src={downicon} alt="" />
                     </div>
 
-
-
-
-
                 </div>
 
             </div>
-            <div className="links-header"></div>
+            <div className="links-header">
+                <button className='BrowsAllCategories'>
+                    <img src={browse} alt="" />
+                    Brows All Categories
+                </button>
+
+                <ul>
+                    <li>
+                        <img src={home} alt="" />
+                        home
+                    </li>
+                    <li>
+                        <img src={hot} alt="" />
+                        Hot deals
+                    </li>
+                    <li>
+                        <img src={percent} alt="" />
+                        Promotions
+                    </li>
+                    <li>
+                        <img src={megaphone} alt="" />
+                        New products
+                    </li>
+                </ul>
+
+                <div className="contact-info">
+                    <img src={call} alt="" />
+                    <span>1233-7777</span>
+                    <p>24/7 support center</p>
+                </div>
+
+            </div>
         </header>
     );
 }
