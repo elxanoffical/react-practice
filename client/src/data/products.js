@@ -1,10 +1,10 @@
-import product1 from '../assets/img/picture/products/image1.svg'
-import product2 from '../assets/img/picture/products/image2.svg'
-import product3 from '../assets/img/picture/products/image3.svg'
-import product4 from '../assets/img/picture/products/image4.svg'
-import product5 from '../assets/img/picture/products/image5.svg'
-import product6 from '../assets/img/picture/products/image6.svg'
-import product7 from '../assets/img/picture/products/image7.svg'
+import product1 from '../assets/img/picture/products/categories/image1.svg'
+import product2 from '../assets/img/picture/products/categories/image2.svg'
+import product3 from '../assets/img/picture/products/categories/image3.svg'
+import product4 from '../assets/img/picture/products/categories/image4.svg'
+import product5 from '../assets/img/picture/products/categories/image5.svg'
+import product6 from '../assets/img/picture/products/categories/image6.svg'
+import product7 from '../assets/img/picture/products/categories/image7.svg'
 
 
 export const products = [

@@ -2,26 +2,27 @@ import React from 'react'
 import './style.scss'
 import yellowstar from '../../assets/img/icon/star_yellow.svg'
 import graystar from '../../assets/img/icon/star_gray.svg'
-import turp from '../../assets/img/picture/products/turp.svg'
 
 
 
-const Raitingcard = () => {
+const Raitingcard = ({ item }) => {
     return (
         <div className='Raitingcard'>
             <div className="img-wrapper">
-                <img src={turp} alt="" />
+                <img src={item.img} alt="" />
             </div>
 
-            
-            <span className="categroy">Vegetables</span>
-            <h1>Redish 500g</h1>
+
+            <span className="categroy">{item.category}</span>
+            <h1>{item.title}</h1>
             <div className="Raiting-stars">
-                <img src={yellowstar} alt="" />
-                <img src={yellowstar} alt="" />
-                <img src={yellowstar} alt="" />
-                <img src={graystar} alt="" />
-                <img src={graystar} alt="" />
+                {[...Array(item.raitingBy5)].map((x, index) => (
+                    <img key={index} src={yellowstar} alt="" />
+                ))}
+
+                {[...Array(5 - item.raitingBy5)].map((x, index) => (
+                    <img key={index + item.raitingBy5} src={graystar} alt="" />
+                ))}
             </div>
             <div className="soldyBY">
                 by
@@ -29,8 +30,14 @@ const Raitingcard = () => {
             </div>
             <div className="purchase-wrapper">
                 <p>
-                    <span>$2</span>
-                    $3.99
+                    <span id='currentprice'>${item.currentPrice}</span>
+                    {
+                        item.hasDiscount && (
+                            <span id="discountLine">
+                                ${item.beforePrice}
+                            </span>
+                        )
+                    }
                 </p>
                 <button>
                     <img src="" alt="" />
